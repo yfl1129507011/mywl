@@ -26,7 +26,10 @@ class Bootstrap extends Yaf_Bootstrap_Abstract {
         $routes = Config::get('Vmall.route.'.ROUTE_FILE.'.regex');
         if(is_array($routes)){
             foreach ($routes as $k=>$v){
-                Yaf_Dispatcher::getInstance()->getRouter()->addRoute(
+                /*Yaf_Dispatcher::getInstance()->getRouter()->addRoute(
+                    $k,new Yaf_Route_Regex($v['match'],$v['route'],$v['map'])
+                    );*/
+                $dispatcher->getRouter()->addRoute(
                     $k,new Yaf_Route_Regex($v['match'],$v['route'],$v['map'])
                     );
             }

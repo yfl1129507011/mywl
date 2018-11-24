@@ -8,11 +8,19 @@
 class Vmall_IndexController extends Yaf_Controller_Abstract{
 
     public function init(){
-        echo 'init';
+
     }
 
     public function indexAction(){
+        // $this->getView(); 展示模板视图
         Yaf_Dispatcher::getInstance()->disableView();
+        //echo $this->getModuleName();  // 获取模块名称  Index
+        echo $this->getViewPath();
+
+    }
+
+    public function demoAction(){
+        //Yaf_Dispatcher::getInstance()->disableView();
         /*$menu = Config::get('Vmall.menu.list.Boss_Index.index');
         var_dump($menu);*/
         //echo Manager_src_Entity_Manager::DEFAULT_CASHIER_ID;
