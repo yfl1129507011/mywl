@@ -33,5 +33,19 @@ $postData = array();
 $postData['username'] = 'test';
 //$postData['client_ip'] = $_SERVER['REMOTE_ADDR'];
 $url = 'http://39.105.168.42/trusted';
-$data = _curl($url,$postData);
-echo $data;  //  nsZpo0abSwG8Yoo-f4B7LA==:XLvYbruy6crnWe6X9rZu1O6E
+//$data = _curl($url,$postData);
+//echo $data;  //  nsZpo0abSwG8Yoo-f4B7LA==:XLvYbruy6crnWe6X9rZu1O6E
+
+/*$url = 'http://127.0.0.1:1080/manager/Manager';
+print_r(explode('/', $url));*/
+
+/*try{
+    throw new Exception('fenlon');
+    echo 'never';
+}catch (Exception $e){
+    echo $e->getMessage().': name';
+}*/
+
+$arr1 = array(1,2);
+$arr2 = array(1,2,4,5,6);
+print_r(array_diff($arr2, $arr1));

@@ -8,7 +8,9 @@
 class Vmall_IndexController extends Yaf_Controller_Abstract{
 
     public function init(){
-
+        //phpinfo();die;
+        /*putenv('MY_NAME=FENLON');
+        echo getenv('MY_NAME');die;*/
     }
 
     public function indexAction(){
